@@ -1,4 +1,6 @@
-## I've created two functions — makeCacheMatrix and cacheSolve — in R which can create a matrix and compute its inverse.
+## I've created two functions — makeCacheMatrix and cacheSolve — in R which can create a matrix and compute its inverse. The functions will also
+## alert a user if the matrix has already been cached, but will still produce the proper output. The functions are able to be tested with the 
+## SOLVE() function in R, which computes the inverse of a matrix.
 
 ## This is the makeCacheMatrix function, which makes a matrix object in R. This function first sets the value of the matrix, then it sets the value of the inverse of the matrix. 
 
