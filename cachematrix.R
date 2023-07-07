@@ -15,8 +15,8 @@ makeCacheMatrix <- function (p = matrix()){
 
 
 ## This is the cacheSolve function. This function, paired with the makeCacheMatrix function, computes the inverse of each item in a matrix. This can be checked by using the SOLVE() 
-function in R. Also, this function will notify the user if a particular matrix has already been cached. It will report "already cached!" to the user, but the function will still give the 
-  correct output. 
+## function in R. Also, this function will notify the user if a particular matrix has already been cached. It will report "already cached!" to the user, but the function will still give the 
+## correct output. 
 
 cacheSolve <- function(p, ...) {
   i <- p$getInv()
