@@ -103,31 +103,3 @@ In order to complete this assignment, you must do the following:
 ### Grading
 
 This assignment will be graded via peer assessment.
-
-
-##SOLUTION
-
-```
-
-makeCacheMatrix <- function (p = matrix()){
-          i <- NULL
-          set <- function(matrix){
-              p <<- matrix
-              i <<- NULL }
-          get <- function() p
-          setInv <- function(inverse) i <<- inverse
-          getInv <- function() i
-          list (set = set, get = get, setInv = setInv, getInv = getInv)
-}
-
-cacheSolve <- function(p, ...) {
-          i <- p$getInv()
-          if(!is.null(i)) {
-            message ("getting cached data!")
-            return(i)
-  }
-          data <- p$get()
-          i <- solve(data, ...)
-          p$setInv(i)
-          i
-}
